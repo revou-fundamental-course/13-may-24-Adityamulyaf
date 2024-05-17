@@ -1,1 +1,19 @@
-/* ini css */
+.section-content {
+    background-color: #5d64ff;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.section-content>h2 {
+    margin: 0;
+}
+
+.operasi {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-color: #b1b4ff;
+    border: 0px;
+}
