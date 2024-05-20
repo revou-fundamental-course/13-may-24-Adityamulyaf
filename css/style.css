@@ -1,19 +1,172 @@
-.section-content {
-    background-color: #5d64ff;
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #DDEDF4;
+    color: #212221;
+    margin: 5%;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.caption {
+    text-align: center;
+}
+
+.caption {
+    margin-bottom: 3%;
+}
+
+.section-content-1 {
+    background-color: #1181B2;
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
+    border-radius: 35px;
 }
 
-.section-content>h2 {
+.section-content-2 {
+    background-color: #1181B2;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: relative;
+}
+
+.section-content-1>h3 {
     margin: 0;
 }
 
+
 .operasi {
+    font-size: 15px;
     padding-top: 12px;
     padding-bottom: 12px;
     width: 100%;
-    background-color: #b1b4ff;
-    border: 0px;
+    border-style: solid;
+    border-color: #1181B2;
+    border-width: 3px;
+    border-radius: 35px;
+    margin-top: 5px;
+}
+
+button {
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: white;
+}
+
+.operasi:hover {
+    background-color: #1181B2;
+    color: white;
+    font-weight: bold;
+}
+
+.formula-img {
+    text-align: center;
+    margin: 30px;
+}
+
+.konten {
+    background-color: white;
+    border-style: solid;
+    border-radius: 35px;
+    border-color: #1181B2;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.rumus {
+    border-style: solid;
+    border-radius: 35px;
+    border-color:#1181B2;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#formula {
+    text-align: center;
+    font-size: larger;
+}
+
+form {
+    font-weight: bold;
+    margin-left: 30px;
+    margin-right: 45px;
+    margin-top: 30px;
+}
+
+input {
+    font-size: 15px;
+    margin: 8px;
+    border-width: 3px;
+    border-color: #1181B2;
+    border-style: solid;
+    border-radius: 35px;
+    width: 100%;
+    outline: none;
+    padding-top: 7px;
+    padding-bottom: 7px;;
+    color:#212221;
+}
+
+.hitung {
+    background-color: #1181B2;
+    color: white;
+    border-color: #1181B2;
+    border-style: solid;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 130px;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+.hitung:hover {
+    background-color: white;
+    color: #1181B2;
+
+}
+
+.ulang {
+    background-color: red;
+    color: white;
+    border-color: red;
+    border-style: solid;
+    border-radius: 35px;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    width: 110px;
+    font-weight: bold;
+    margin-top: 3%;
+}
+
+.ulang:hover {
+    background-color: white;
+    color: red;
+}
+
+.center-button {
+    text-align: center;
+}
+
+.right-button {
+    text-align: right;
 }
