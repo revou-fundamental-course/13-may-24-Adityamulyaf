@@ -4,25 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">>
     <link rel="stylesheet" href="css/style.css">
-    <title>Adityamulyaf Assignment Calculator</title>
+    <title>Kalkulator Segitiga Adityamulyaf</title>
 </head>
 <body>
     <header>
         <h1>Kalkulator Segitiga</h1>
         <section>
-            <p class="caption">Sebuah website sederhana yang berfungsi untuk menghitung luas dan keliling segitiga.</p></section>
+            <p class="caption">Sebuah website yang berfungsi untuk menghitung luas dan keliling segitiga, dan website pertama @Adityamulyaf.</p></section>
     </header>
 
     <section>
         <div class="section-content-1">
-            <h3>Hitung apa?</h3>
+            <h3>Menghitung apa?</h3>
         </div>
 
-        <button class="operasi">Keliling Segitiga</button>
-        <button class="operasi">Luas Segitiga</button>
+        <button type="button" class="operasi" onclick="kelilingShow()">Keliling Segitiga</button>
+        <button type="button" class="operasi" onclick="luasShow()">Luas Segitiga</button>
     </section>
 
-    <section class="konten">
+    <!-- Secton Keliling -->
+
+    <section id="keliling-section" class="konten" style="display: none;">
         <header class="section-content-2">
             <h2>Keliling Segitiga</h2>
         </header>
@@ -41,31 +43,44 @@
         <p>c = Sisi</p>
         </div>
 
-        <form action="">
+        <form>
             <section>
             <div>
-            <label for="sisi-a">Sisi a:</label><input/>
+            <label>Sisi a:</label><input id="sisi-a-input" type="number" required/>
             </div>
+            
             <div>
-            <label for="Sisi-B">Sisi b:</label><input/>
+            <label>Sisi b:</label><input id="sisi-b-input" type="number" required/>
             </div>
+
             <div>
-                <label for="sisi-c">Sisi c:</label><input/>
+                <label>Sisi c:</label><input id="sisi-c-input" type="number" required/>
                 </div>
             </section>
+            
+            <br>
+            <div id="output-sisi-a"></div>
+            <div id="output-sisi-b"></div>
+            <div id="output-sisi-c"></div>
 
-            <p>K = a + b + c</p>
+            <br><br>
+            <div id="output-rumus-keliling"></div>
+
+            <br><br>
+            <div id="output-keliling"></div>
 
             <div class="center-button">
-            <button class="hitung">Hitung</button>
+            <button type="button" class="hitung" onclick="hitungKeliling()" oncl>Hitung</button>
             </div>
-            <div class="right-button">
-            <button class="ulang">Ulang</button>
+            <div class="left-button">
+            <button type="button" class="ulang" onclick="ulangKeliling()">Ulang</button>
             </div>
         </form>
     </section>
 
-    <section class="konten">
+    <!-- Section Luas -->
+
+    <section id="luas-section" class="konten" style="display: none;">
         <header class="section-content-2">
             <h2>Luas Segitiga</h2>
         </header>
@@ -83,25 +98,34 @@
         <p>t = Tinggi</p>
         </div>
 
-        <form action="">
+        <form>
             <section>
             <div>
-            <label for="alas">Alas:</label><input/>
+            <label>Alas:</label><input id="alas-input" type="number" required/>
             </div>
             <div>
-            <label for="tinggi">Tinggi:</label><input/>
+            <label>Tinggi:</label><input id="tinggi-input" type="number" required/>
             </div>
             </section>
 
-            <p>L = 1/2 x a x t</p>
+            <br>
+            <div id="output-alas"></div>
+            <div id="output-tinggi"></div>
+
+            <br><br>
+            <div id="output-rumus-luas"></div>
+
+            <br><br>
+            <div id="output-luas"></div>
 
             <div class="center-button">
-            <button class="hitung">Hitung</button>
+            <button type="button" class="hitung" onclick="hitungLuas()">Hitung</button>
             </div>
-            <div class="right-button">
-            <button class="ulang">Ulang</button>
+            <div class="left-button">
+            <button type="button" class="ulang" onclick="ulangLuas()">Ulang</button>
             </div>
         </form>
     </section>
+    <script src="js/script.js"></script>
 </body>
 </html>

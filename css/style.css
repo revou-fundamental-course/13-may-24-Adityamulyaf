@@ -69,6 +69,12 @@ button {
     font-weight: bold;
 }
 
+.operasi:focus {
+    background-color: #1181B2;
+    color: white;
+    font-weight: bold;
+}
+
 .formula-img {
     text-align: center;
     margin: 30px;
@@ -170,6 +176,6 @@ input {
     text-align: center;
 }
 
-.right-button {
-    text-align: right;
+.left-button {
+    text-align: left;
 }
